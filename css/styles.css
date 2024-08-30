@@ -5,7 +5,7 @@ html {
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #E4E0D5;
+    background-color: #5D666F;
 }
 
 ul,
@@ -58,25 +58,50 @@ button {
     max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
-    background-color: #5D666F;
     height: 100vh;
     display: flex;
-    justify-content: center;
-        align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu-link {
-    font-family: Arial, sans-serif;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
     display: block;
     color: #ffffff;
     font-size: 22px;
-    font-weight: 700;
+
     letter-spacing: normal;
     text-transform: capitalize;
     line-height: 1.43;
     padding: 10px 0;
     text-align: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*? --------- MOBILE MENU --------- */
+.menu-link:focus,
+.menu-link:hover {
+    color: #000000;
+}
 
+.icon-svg {
+    fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-svg:focus,
+.icon-svg:hover {
+    fill: #000000;
+}
+
+.app-link-thumb {
+    display: flex;
+}
+
+.app-link {
+    padding: 30px 10px;
+    margin-bottom: 20px;
+}
