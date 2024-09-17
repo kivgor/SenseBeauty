@@ -4,8 +4,12 @@ html {
 }
 
 body {
-    font-family: "Tenor Sans", sans-serif;
-    background-color: #3c0000;
+    font-family: "Eurostile Extd", sans-serif;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/bg.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 ul,
@@ -83,7 +87,7 @@ button {
 
 .menu-link:focus,
 .menu-link:hover {
-    color: #000000;
+    color: #ff8888;
 }
 
 .icon-svg {
@@ -93,7 +97,7 @@ button {
 
 .icon-svg:focus,
 .icon-svg:hover {
-    fill: #000000;
+    fill: #ff8888;
 }
 
 .app-link-thumb {
