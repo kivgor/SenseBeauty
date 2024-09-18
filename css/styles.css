@@ -1,3 +1,8 @@
+:root {
+    --text: #ffffff;
+    --hover: #ff8888;
+}
+
 /*! --------- RESET ---------  */
 html {
     scroll-behavior: smooth;
@@ -69,14 +74,13 @@ button {
     align-items: center;
 }
 
+.apps-title,
 .menu-link {
     font-weight: 400;
     font-style: normal;
-
     display: block;
-    color: #ffffff;
+    color: var(--text);
     font-size: 22px;
-
     letter-spacing: normal;
     text-transform: capitalize;
     line-height: 1.43;
@@ -86,27 +90,34 @@ button {
 }
 
 .icon-svg {
-    fill: #ffffff;
+    fill: var(--text);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:focus,
 .menu-link:hover {
-    color: #ff8888;
+    color: var(--hover);
 }
 
 .logo:focus,
 .logo:hover,
 .icon-svg:focus,
 .icon-svg:hover {
-    fill: #ff8888;
+    fill: var(--hover);
 }
 
-.app-link-thumb {
+.apps-link-thumb {
     display: flex;
+    flex-direction: column;
 }
 
-.app-link {
-    padding: 30px 10px;
+.apps-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apps-link {
+    padding: 10px 10px 30px 10px;
     margin-bottom: 50px;
 }
