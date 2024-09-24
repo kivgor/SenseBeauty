@@ -82,7 +82,7 @@ button {
     color: var(--text);
     font-size: 22px;
     letter-spacing: normal;
-    /* text-transform: capitalize; */
+    text-transform: capitalize;
     line-height: 1.43;
     padding: 10px 0;
     text-align: center;
@@ -91,6 +91,7 @@ button {
 
 .apps-title-size {
     font-size: 18px;
+    text-transform: none;
 }
 
 .icon-svg {
