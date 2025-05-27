@@ -16,6 +16,8 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px)
+    env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
 }
 
 ul,
@@ -65,7 +67,8 @@ button {
 /** --------- COMMON STYLES --------- */
 
 .container {
-  max-width: 320px;
+  max-width: 400px;
+  min-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
   height: 100vh;
@@ -73,7 +76,6 @@ button {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .apps-title,
