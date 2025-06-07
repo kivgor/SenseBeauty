@@ -16,8 +16,6 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px)
-    env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
 }
 
 ul,
@@ -71,7 +69,7 @@ button {
   min-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
